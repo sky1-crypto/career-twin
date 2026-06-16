@@ -6,7 +6,6 @@ const extractSkills =
 const Resume = require("../models/Resume");
 
 async function uploadResume(req, res) {
-
     try {
 
         const dataBuffer =

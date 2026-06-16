@@ -5,6 +5,15 @@ const router =
     express.Router();
 
 const {
+    careerReadiness
+} = require("../controllers/careerController");
+
+router.get(
+    "/readiness",
+    careerReadiness
+);
+
+const {
     analyzeGap
 } = require(
     "../controllers/careerController"
@@ -15,5 +24,4 @@ router.post(
     analyzeGap
 );
 
-module.exports =
-    router;
+module.exports =   router;
